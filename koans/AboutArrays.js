@@ -46,12 +46,12 @@ describe("About Arrays", function() {
   it("should slice arrays", function() {
     var array = ["peanut", "butter", "and", "jelly"];
     
-    expect(array.slice(0, 1)).toEqual(array.shift([0]);
-    expect(array.slice(0, 2)).toEqual("peanut", "butter");
+    expect(array.slice(0, 1)).toEqual(["peanut"]);
+    expect(array.slice(0, 2)).toEqual(["peanut", "butter"]);
     expect(array.slice(2, 2)).toEqual([]);
-    expect(array.slice(2, 20)).toEqual("and", "jelly");
+    expect(array.slice(2, 20)).toEqual(["and", "jelly"]);
     expect(array.slice(3, 0)).toEqual([]);
-    expect(array.slice(3, 100)).toEqual("jelly");
+    expect(array.slice(3, 100)).toEqual(["jelly"]);
     expect(array.slice(5, 1)).toEqual([]);
   });
 
